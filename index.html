@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 2</title>
+    <link rel="stylesheet", href="estilos.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="funcionamiento.js"></script>
+
+<body>
+    <div class="container">
+        <div class="rfc">
+            <div class="panel-1">Practica 2- RFC</div>
+            <fieldset class="contenedor1">
+                <label>Nombre:</label><br>
+                <input type="text" class="entradaDatos" id="input1" style="text-transform: uppercase;"/><br>
+                <label>Apellido Paterno:</label><br> 
+                <input type="text" class="entradaDatos" id="input2" style="text-transform: uppercase;"/><br>
+                <label>Apellido materno:</label><br>
+                <input type="text" class="entradaDatos" id="input3" style="text-transform: uppercase;"/><br>
+                <label>Fecha:</label><br>
+                <input type="date" class="entradaDatos" id="inputDate"/><br>
+                <button id="generarRFC">Generar un RFC:</button><button id="limpiar">Limpiar</button><br>
+                <label>RFC:</label><br>
+                <input type="text" class="Salida" id="inputRfc" readonly style="text-transform: uppercase;"/><br>
+            </fieldset>
+        </div>
+        <div class="api">
+            <div class="panel-1">AJAX - API</div>
+            <fieldset>
+                <label>ID:</label><br>
+                <input type="number" class="entradaDatos" id="inputID"/><br>
+                <button id="buscarDato">BUSCAR</button> <button id="clean">LIMPIAR</button><br><br>
+                <label>Nombre y Apellido paterno del usuario seleccionado</label><br>
+                <div class="most">
+                    <p id="nameAndApPat"></p>
+                </div><br>
+                <label>Email del usuario:</label><br>
+                <div class="most">
+                    <p id="email"></p>
+                </div><br>
+            </fieldset>
+        </div>
+    </div>    
+</body>
+</html>
